@@ -1,4 +1,4 @@
-package tdd.cucumber.fuzz;
+package tdd.cucumber.fizzbuzz;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

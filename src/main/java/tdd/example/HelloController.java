@@ -1,4 +1,4 @@
-package tdd.spring;
+package tdd.example;
 
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,5 +8,5 @@ public class HelloController {
   public String hello(String name) {
     return "Hello " + name;
   }
-
+  
 }

@@ -12,14 +12,23 @@ import tdd.domain.Account;
 
 public class AssertStudyCase {
 
+  UserController c;
+  UserService s;
+
   ObjectMapper mapper = new ObjectMapper();
+
+  public AssertStudyCase() {
+    s = new UserService();
+    c = new UserController();
+    c.service = s;
+  }
 
   public String hello() {
     return "hello world";
   }
 
   public List<Account> queryAccount() {
-    return Arrays.asList(new Account("张三"));
+    return s.findAll();
   }
 
   public String accountComment() {
@@ -31,11 +40,11 @@ public class AssertStudyCase {
   }
 
   public List<Account> orderAccountByName() {
-    return Arrays.asList(new Account("李四"), new Account("张三"));
+    return s.findAll();
   }
 
   public Map<String, Object> queryAccountAsMap() {
-    return ImmutableMap.of("username", "张三");
+    return c.login("root", "root");
   }
 
 }

@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigUtils;
 import org.springframework.context.support.StaticApplicationContext;
 
+import tdd.example.HelloController;
+
 public class CodingApplicationContext {
   
   @Autowired
